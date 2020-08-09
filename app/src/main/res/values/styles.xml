@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#222025</item>
+        <item name="colorPrimaryDark">#222025</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 툴바 스타일   -->
+    <style name="AppTheme.Toolbar" >
+        <item name="android:background">#00000000</item>
+        <item name="titleTextColor">#F5F6F8</item>
+        <!-- 툴바의 메뉴아이템들의 색상값 지정  -->
+        <item name="subtitleTextColor">#AFBAE3</item>
+        <item name="colorControlNormal">#FFFFFFFF</item>
+        <item name="windowActionBarOverlay">true</item>
+
+    </style>
+
+
+
+
+
+
+
+</resources>

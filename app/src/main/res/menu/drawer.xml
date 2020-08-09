@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Your Account"></item>
+    <item android:id="@+id/menu_gallery"
+        android:title="Gallery"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+
+    <item android:id="@+id/menu_send"
+        android:title="Send"
+        android:icon="@android:drawable/ic_menu_send"/>
+
+    <!-- 구분선같은 효과를 주고 싶다면. sub menu만들면 됨 -->
+
+
+
+
+</menu>
