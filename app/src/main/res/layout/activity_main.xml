@@ -6,26 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/layout_drawer"
-    android:background="@drawable/back2">
+    android:background="@drawable/back4">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:theme="@style/AppTheme.Toolbar"/>
+        <Button
+android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/a"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@id/c"
+            android:background="@drawable/ic_baseline_play_circle_filled_24"
+            android:backgroundTint="#F4450E"
+            android:layout_alignParentBottom="true"
+            android:onClick="clickPlay"/>
+        <Button
+            android:layout_toRightOf="@id/a"
+            android:id="@+id/b"
+            android:backgroundTint="#FF5722"
+            android:layout_above="@id/c"
+            android:layout_alignParentBottom="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/ic_baseline_pause_24"
+            android:onClick="clickStop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/b"
+            android:layout_marginBottom="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@id/c"
+            android:text="Music"/>
 
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="0dp"></androidx.viewpager.widget.ViewPager>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/pager"
-        android:layout_below="@id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.viewpager.widget.ViewPager>
-
-    <Button
+        <Button
+            android:id="@+id/c"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -33,12 +65,13 @@
         android:text=" 이전"
         android:textSize="22dp"
         android:textColor="#FAE3E3"
-        android:backgroundTint="#070000"
+        android:backgroundTint="#ff7777"
         android:fontFamily="@font/bold"
         android:background="@drawable/bg_button_round"
         android:onClick="clickPrev"/>
 
     <Button
+        android:id="@+id/d"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_centerVertical="true"

@@ -9,10 +9,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         adpater = new MyAdapter(items, getLayoutInflater());
 
         for (int i = 0; i < 24; i++) {
@@ -90,6 +96,19 @@ public class MainActivity extends AppCompatActivity {
         int index = pager.getCurrentItem();
         pager.setCurrentItem(index + 1, false);
     }
+    public void clickPlay(View view) {
+        //뮤직을 백그라운드에서 실행하는 서비스를 시작!!
+        Intent intent= new Intent(this, MusicService.class);
 
+        //포어그라운드 서비스로 실행하도록.. (Mainfest.xml에 퍼미션)
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O) startForegroundService(intent);
+        else startService(intent);
 
+    }
+
+    public void clickStop(View view) {
+        //뮤직을 백그라운드에서 실행하는 서비스를 종료!!
+        Intent intent= new Intent(this, MusicService.class);
+        stopService(intent);
+    }
 }
