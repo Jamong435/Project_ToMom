@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "상단에이메일이있습니다", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menu_chat:
-                        Intent intent2=new Intent(MainActivity.this,YoutubeActivity.class);
+                        Intent intent2=new Intent(MainActivity.this,ChattingActivity.class);
                         startActivity(intent2);
 
                         break;
