@@ -7,15 +7,9 @@
     tools:context=".NewWork"
     android:background="@drawable/back3">
 
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:text="아직신작이 업데이트안되었습니다"
-        android:textSize="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/bold"
-        android:gravity="center"
-        />
-
+    <fragment
+        android:id="@+id/googlemap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment"/>
 </RelativeLayout>

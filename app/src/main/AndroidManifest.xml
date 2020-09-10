@@ -3,7 +3,7 @@
     package="com.kim9212.tomom">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".YoutubeActivity"></activity>
+        <activity android:name=".ChatActivity" />
         <activity android:name=".ChattingActivity" />
         <activity android:name=".IntroActivity">
             <intent-filter>
@@ -26,6 +27,10 @@
         <activity android:name=".MainActivity" />
 
         <service android:name=".MusicService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBaK3pNyJzbWwNBZOFU7yNAcGTa9tYZ9-Q" />
     </application>
 
 </manifest>

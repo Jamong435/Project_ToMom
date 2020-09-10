@@ -4,6 +4,7 @@
     <item android:title="고객센터"
         android:id="@+id/menu_chat"
         android:icon="@drawable/ic_baseline_chat_24"/>
+
     <item android:id="@+id/menu_gallery"
         android:title="찾아오시는길"
         android:icon="@android:drawable/ic_dialog_map"/>
