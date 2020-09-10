@@ -19,7 +19,7 @@ public class IntroActivity extends AppCompatActivity {
         handler.sendEmptyMessageDelayed(0,1500);
 
         String strChange = "<font color=\"#FF5722\">J</font>";
-        String strBack = "eong Hee \n Galley";
+        String strBack = "ung Hee \n Galley";
         TextView title = (TextView)findViewById(R.id.title);
         title.setText(Html.fromHtml(strChange+strBack));
 

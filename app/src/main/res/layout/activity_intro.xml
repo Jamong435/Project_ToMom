@@ -13,7 +13,7 @@
         android:textColor="#240345"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jeonghee\nGallery"
+        android:text="Junghee\nGallery"
         android:fontFamily="@font/bold"
         android:textSize="50dp"
         android:padding="45dp"/>
