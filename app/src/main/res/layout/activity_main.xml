@@ -28,7 +28,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/ic_baseline_play_circle_filled_24"
-            android:backgroundTint="#F4450E"
+            android:backgroundTint="#3F51B5"
             android:onClick="clickPlay" />
 
         <Button
@@ -40,7 +40,7 @@
             android:layout_marginBottom="50dp"
             android:layout_toRightOf="@id/a"
             android:background="@drawable/ic_baseline_pause_24"
-            android:backgroundTint="#FF5722"
+            android:backgroundTint="#333333"
             android:onClick="clickStop" />
 
         <TextView
@@ -67,7 +67,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
             android:background="@drawable/bg_button_round"
-            android:backgroundTint="#ff7777"
+            android:backgroundTint="#333333"
             android:fontFamily="@font/bold"
             android:onClick="clickPrev"
             android:text=" 이전"

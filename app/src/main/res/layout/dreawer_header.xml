@@ -9,17 +9,16 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/work_1"
+        android:src="@drawable/back7"
         android:layout_margin="8dp"
         app:civ_border_width="1dp"
         app:civ_border_color="@color/colorPrimary"
-        android:clickable="true"
-        android:onClick="clickHeaderIcon"/>
+       />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="남정희"
+        android:text="MINT"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#1E1C1C"
@@ -33,7 +32,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="'하루하루 행복하게살고싶습니다'"
+        android:text="'작은행복을 그리다'"
         android:textColor="#090909"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="120dp"/>

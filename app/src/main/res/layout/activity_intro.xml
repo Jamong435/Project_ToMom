@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IntroActivity"
-    android:background="@drawable/back1"
+    android:background="@drawable/back6"
     >
+
     <TextView
-        android:layout_alignParentBottom="true"
         android:id="@+id/title"
-        android:textColor="#240345"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Junghee\nGallery"
+        android:layout_alignParentRight="true"
         android:fontFamily="@font/bold"
-        android:textSize="50dp"
-        android:padding="45dp"/>
+        android:padding="45dp"
+        android:text="Mint\nSHOP"
+        android:textColor="#240345"
+        android:textSize="50dp" />
 
 </RelativeLayout>

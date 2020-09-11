@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         adpater = new MyAdapter(items, getLayoutInflater());
 
-        for (int i = 0; i < 24; i++) {
-            items.add(new Integer(R.drawable.work_1) + i);
+        for (int i = 0; i < 44; i++) {
+            items.add(new Integer(R.drawable.work_0) + i);
         }
         //ViewPager에 아답터 설정
         pager = findViewById(R.id.pager);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setSubtitle("Namjunghee");
+        getSupportActionBar().setSubtitle("MINTSHOP");
 
 
         drawerLayout = findViewById(R.id.layout_drawer);

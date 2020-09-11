@@ -9,10 +9,10 @@
     <!-- 툴바 스타일   -->
     <style name="AppTheme.Toolbar" >
         <item name="android:background">#00000000</item>
-        <item name="titleTextColor">#E91E63</item>
+        <item name="titleTextColor">#333333</item>
         <!-- 툴바의 메뉴아이템들의 색상값 지정  -->
         <item name="subtitleTextColor">#FDF4F1</item>
-        <item name="colorControlNormal">#E91E63</item>
+        <item name="colorControlNormal">#333333</item>
         <item name="windowActionBarOverlay">true</item>
 
     </style>

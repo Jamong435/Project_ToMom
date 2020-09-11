@@ -18,8 +18,8 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
         handler.sendEmptyMessageDelayed(0,1500);
 
-        String strChange = "<font color=\"#FF5722\">J</font>";
-        String strBack = "ung Hee \n Galley";
+        String strChange = "<font color=\"#FF5722\">M</font>";
+        String strBack = "INT \n SHOP";
         TextView title = (TextView)findViewById(R.id.title);
         title.setText(Html.fromHtml(strChange+strBack));
 
