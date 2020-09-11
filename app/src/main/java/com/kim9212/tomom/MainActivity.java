@@ -12,13 +12,18 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import java.util.ArrayList;
 
@@ -118,5 +123,30 @@ public class MainActivity extends AppCompatActivity {
         //뮤직을 백그라운드에서 실행하는 서비스를 종료!!
         Intent intent= new Intent(this, MusicService.class);
         stopService(intent);
+    }
+
+    public void clickpush(View view) {
+        //앱을 FCM서버에 등록하면 앱을 식별할 수 있는 고유 토큰값(문자열)을 줌
+        //이 토큰값(InstanceID)을 통해 앱들(디바이스들)을 구별하여 메세지가 전달되는 것임.
+
+        FirebaseInstanceId firebaseInstanceId= FirebaseInstanceId.getInstance();
+        Task<InstanceIdResult> task= firebaseInstanceId.getInstanceId();
+        task.addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+            @Override
+            public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                String token= task.getResult().getToken();
+
+                //토큰값 출력
+                Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
+                //Logcat 창에 토큰값 출력
+                Log.i("TAG", token);
+
+                //실무에서는 이 token값을 본인의 웹서버(dothome서버)에
+                //전송하여 웹 DB에 token값 저장하도록..해야함
+
+
+            }
+        });
+
     }
 }

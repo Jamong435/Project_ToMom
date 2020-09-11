@@ -44,6 +44,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.1.0'
     implementation 'com.google.firebase:firebase-storage:18.0.0'
 
+    //Firebase push
+    implementation 'com.google.firebase:firebase-messaging:19.0.0'
+
+
     //google map
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'com.google.android.gms:play-services-location:17.0.0'
